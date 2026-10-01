@@ -16,10 +16,10 @@ Clone the repository and install dependencies using Yarn:
 
 ```bash
 # Install dependencies
-yarn install
+pnpm install
 
 # Start development server
-yarn dev
+pnpm dev
 ```
 
 The application will be available at `http://localhost:5173`.
@@ -30,22 +30,22 @@ Run the individual testing or quality scripts:
 
 ```bash
 # Run Vitest test suite
-yarn vitest
+pnpm vitest
 
 # Run TypeScript typecheck
-yarn typecheck
+pnpm typecheck
 
 # Run linter checks
-yarn lint
+pnpm lint
 
 # Run code formatter check
-yarn format:test
+pnpm format:test
 ```
 
 Run the complete test & verification suite (typecheck + format check + lint + vitest + production build):
 
 ```bash
-yarn test
+pnpm test
 ```
 
 ## Features

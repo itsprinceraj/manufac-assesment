@@ -5,7 +5,7 @@ export function PageHeader() {
     <Stack gap="xs" mb="lg">
       <Group justify="space-between" align="flex-start">
         <div>
-          <Title order={2} c="blue.9" fw={700}>
+          <Title order={2} c="black" fw={700}>
             Geriatric Care Assessment
           </Title>
           <Text c="dimmed" size="sm" mt={4}>

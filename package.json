@@ -8,14 +8,14 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
-    "lint": "npm run oxlint && npm run stylelint",
+    "lint": "pnpm run oxlint && pnpm run stylelint",
     "oxlint": "oxlint -c oxlint.config.mjs .",
     "stylelint": "stylelint '**/*.css' --cache",
     "format:test": "oxfmt -c oxfmt.config.mjs --check \"**/*.{ts,tsx}\"",
     "format:write": "oxfmt -c oxfmt.config.mjs --write \"**/*.{ts,tsx}\"",
     "vitest": "vitest run",
     "vitest:watch": "vitest",
-    "test": "npm run typecheck && npm run format:test && npm run lint && npm run vitest && npm run build",
+    "test": "pnpm run typecheck && pnpm run format:test && pnpm run lint && pnpm run vitest && pnpm run build",
     "storybook": "storybook dev -p 6006",
     "storybook:build": "storybook build"
   },
@@ -57,5 +57,5 @@
     "vite": "^8.0.0",
     "vitest": "^4.1.0"
   },
-  "packageManager": "yarn@4.18.0"
+  "packageManager": "pnpm@9.12.0"
 }

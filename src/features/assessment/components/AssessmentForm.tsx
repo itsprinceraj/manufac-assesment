@@ -74,7 +74,7 @@ export function AssessmentForm({ onSave, saveDelayMs = 800 }: AssessmentFormProp
   return (
     <Stack gap="lg">
       <Group justify="flex-end">
-        <Button variant="outline" color="blue" onClick={handleLoadSample} disabled={isSaving}>
+        <Button variant="outline" color="dark" onClick={handleLoadSample} disabled={isSaving}>
           Load sample patient
         </Button>
       </Group>
@@ -84,7 +84,7 @@ export function AssessmentForm({ onSave, saveDelayMs = 800 }: AssessmentFormProp
           <Paper p="md" radius="sm" withBorder bg="white">
             <Stack gap="md">
               <div>
-                <Title order={4} c="blue.8">
+                <Title order={4} c="black">
                   Patient Information
                 </Title>
                 <Text size="xs" c="dimmed">
@@ -135,7 +135,7 @@ export function AssessmentForm({ onSave, saveDelayMs = 800 }: AssessmentFormProp
           <Paper p="md" radius="sm" withBorder bg="white">
             <Stack gap="md">
               <div>
-                <Title order={4} c="blue.8">
+                <Title order={4} c="black">
                   Clinical Assessment
                 </Title>
                 <Text size="xs" c="dimmed">
@@ -188,7 +188,7 @@ export function AssessmentForm({ onSave, saveDelayMs = 800 }: AssessmentFormProp
           <Paper p="md" radius="sm" withBorder bg="white">
             <Stack gap="md">
               <div>
-                <Title order={4} c="blue.8">
+                <Title order={4} c="black">
                   Follow-up & Consent
                 </Title>
                 <Text size="xs" c="dimmed">
@@ -218,7 +218,7 @@ export function AssessmentForm({ onSave, saveDelayMs = 800 }: AssessmentFormProp
           </Paper>
 
           <Group justify="flex-end">
-            <Button type="submit" size="md" color="blue" loading={isSaving} disabled={isSaving}>
+            <Button type="submit" size="md" color="dark" loading={isSaving} disabled={isSaving}>
               Save Assessment
             </Button>
           </Group>
